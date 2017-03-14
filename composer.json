@@ -1,8 +1,8 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "joeyochua/shadowd_ui",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "UI for Shadowd Daemon",
     "autoload": {
         "psr-0": { "": "src/", "SymfonyStandard": "app/" }
     },
