@@ -3,7 +3,7 @@ services:
         class: Swd\AnalyzerBundle\Twig\MergePathExtension
         tags:
             - { name: twig.extension }
-        arguments: [ @service_container ]
+        arguments: [ "@service_container" ]
 
     twig.extension.text:
         class: Twig_Extensions_Extension_Text
@@ -12,7 +12,7 @@ services:
 
     generator_manager:
         class:     Swd\AnalyzerBundle\Generator\GeneratorManager
-        arguments: [ @doctrine.orm.entity_manager ]
+        arguments: [ "@doctrine.orm.entity_manager" ]
 
     swd.locale_listener:
         class: Swd\AnalyzerBundle\EventListener\LocaleListener
